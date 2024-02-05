@@ -6,7 +6,7 @@ export default function useContextMenu(containerRef: any) {
   const showMenu = ref(false);
 
   const handleContextMenu = (e: MouseEvent) => {
-    e.preventDefault();
+      e.preventDefault();
     e.stopPropagation();
     showMenu.value = true;
     x.value = e.clientX;
